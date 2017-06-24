@@ -1,0 +1,7 @@
+extends layout
+
+block content
+  each val in entries
+    div
+      a(href=('news' + val.link.split('news')[1]))
+        p #{val.title}
